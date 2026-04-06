@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hostel Management System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+                        url("images/h1..jpg") no-repeat center/cover;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0,0,0,0.4);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 700;
+            margin-left: 350px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #00c6ff;
+        }
+
+        .hero {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero-box {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(15px);
+            padding: 50px;
+            border-radius: 15px;
+            width: 400px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            animation: fadeIn 1.2s ease;
+        }
+
+        .hero-box h1 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .hero-box p {
+            font-size: 14px;
+            margin-bottom: 30px;
+            color: #ddd;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .admin {
+            background: linear-gradient(45deg, #ff9800, #ff5722);
+        }
+
+        .admin:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255,152,0,0.5);
+        }
+
+        .student {
+            background: linear-gradient(45deg, #2196f3, #00c6ff);
+        }
+
+        .student:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(33,150,243,0.5);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 13px;
+            color: #ccc;
+            background: rgba(0,0,0,0.5);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media(max-width: 500px) {
+            .hero-box {
+                width: 90%;
+                padding: 25px;
+            }
+
+            .navbar {
+                padding: 15px 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">🏠 The Institute of Management & Rural Development Administration</div>
+    </div>
+
+    <div class="hero">
+        <div class="hero-box">
+            <h1>IMRDA Hostel</h1>
+
+            <a href="adminlogin.jsp" class="btn admin">Admin Login</a>
+            <a href="studentlogin.jsp" class="btn student">Student Login</a>
+        </div>
+    </div>
+
+   
+</body>
+</html>
